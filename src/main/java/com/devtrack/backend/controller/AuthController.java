@@ -1,8 +1,9 @@
 package com.devtrack.backend.controller;
 
 import com.devtrack.backend.entity.User;
+import com.devtrack.backend.helper.PasswordHasher;
 import com.devtrack.backend.repository.UserRepository;
-import com.devtrack.backend.service.PasswordHasher;
+
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

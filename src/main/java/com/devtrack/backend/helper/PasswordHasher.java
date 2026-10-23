@@ -1,6 +1,5 @@
-package com.devtrack.backend.service;
+package com.devtrack.backend.helper;
 
-import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.security.MessageDigest;
 import java.security.SecureRandom;
