@@ -22,6 +22,10 @@ public class UserController {
         return userRepository.findAll();
     }
 
+    @GetMapping("/{id}")
+    public User getUser(@PathVariable Long id){
+        return userService.getUserById(id);
+    }
     @PatchMapping ("/{id}") 
     public User updateUser(@PathVariable Long id, @RequestBody UpdateUserRequest updateRequest ){
         return userService.update(id, updateRequest);
